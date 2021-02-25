@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/js/login.js"></script>
+</head>
+<link rel="stylesheet" href="/css/auth.css">
+
+<body>
+	<form id="loginForm" action="/login" method="POST">
+		<div class="auth">
+			<div class="login-header">
+				<h3>LOGIN</h3>
+				<p>Please enter your credentials to login.</p>
+			</div>
+			<input type="text" id="email" name="email" placeholder="Email">
+			<input type="password" id="password" name="password" placeholder="Password" autocomplete="on">
+
+			<label id="error"></label>
+			<input id="submit" type="submit" value="Submit">
+			<a href="/signup">Don't have an account? Create one here!</a>
+		</div>
+	</form>
+</body>
+
+</html>

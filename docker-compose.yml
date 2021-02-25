@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  app:
+    container_name: app
+    build: .
+    volumes:
+      - type: bind
+        source: ./src
+        target: /home/src
+    ports:
+      - "8080:8080"
+    links:
+      - mongoDB
+    environment:
+      - dev=1
+      - db_service_name=mongoDB
+      - db_name=example_db
+      - db_retry_time=3000
+  mongoDB:
+    container_name: mongoDB
+    image: mongo
+    volumes:
+      - ./db:/data/db
+    ports:
+      - "27017:27017"

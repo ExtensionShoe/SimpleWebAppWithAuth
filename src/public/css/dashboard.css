@@ -1,0 +1,22 @@
+.coursecontainer {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	border-radius: 0.1cm;
+	color: white;
+	width: 7cm;
+	height: 7cm;
+	display: inline-block;
+}
+
+.coursethumbnail {
+	background-color: lightcoral;
+	width: 100%;
+	height: 50%;
+	border-top-right-radius: 0.1cm;
+	border-top-left-radius: 0.1cm;
+}
+
+.coursedetails {
+	padding: 0.1cm;
+	color: rgb(80, 80, 80);
+}
