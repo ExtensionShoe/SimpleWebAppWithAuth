@@ -1,6 +1,6 @@
 $(document).ready(() => {
 	$("#loginForm").submit(function () {
-		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		var regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		if (!regex.test($("#email").val())) {
 			$("#error").text("Please enter a valid email address!");
 			return false;

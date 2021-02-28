@@ -7,7 +7,15 @@
 </head>
 
 <body>
+	<div class="vertical-menu">
+		<a href="/" class="active">Home</a>
+		<a href="/announcements">Announcements</a>
+	</div>
 
+	<form action="/upload" enctype="multipart/form-data" method="POST">
+		<input type="file" name="myImage" accept="image/*" />
+		<input type="submit" value="Upload Photo" />
+	</form>
 </body>
 
 </html>
